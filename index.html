@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PE.SDK Getty Images</title>
+    <script src="./getty-images.umd.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="editor"
+      style="width: 100vw; height: 100vh; position: relative"
+    ></div>
+    <script>
+      GettyIntegration.init({
+        gettyAPIKey: "srsn7qu3ampur9ar2zt49cw9",
+        custom: {
+          languages: {
+            en: {
+              mainCanvasActions: {
+                buttonExport: 'License Image',
+              },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
